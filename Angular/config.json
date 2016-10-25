@@ -1,0 +1,5 @@
+﻿{
+  "Data": {
+    "RestourantConnection": "Server=SPOPOV\\SQLEXPRESS;Database=RestourantDB;Trusted_connection=true;MultipleActiveResultSets=true;"
+  }
+}
