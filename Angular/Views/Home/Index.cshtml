@@ -5,22 +5,20 @@
 
 }
 @section Scripts{
-    <script src="~/lib/angular/angular.min.js"></script>
-    <script src="~/lib/angular-component-router/angular_1_router.js"></script>
-    <script src="~/lib/angular-cookies/angular-cookies.js"></script>
-    <script src="~/AngularApp/main.js"></script>
-    <script src="~/AngularApp/app/app.component.js"></script>
-    <script src="~/AngularApp/menu/menu.component.js"></script>
-    <script src="~/AngularApp/restaurantTables/restaurantTables.component.js"></script>
-    <script src="~/AngularApp/order/showOrder.component.js"></script>
-    <script src="~/AngularApp/order/addItemToOrder.component.js"></script>
-    <script src="~/AngularApp/sharedServices/common.service.js"></script>
-    <script src="~/AngularApp/sharedServices/logger.service.js"></script>
-    <script src="~/AngularApp/sharedServices/constant.service.js"></script>
-    <script src="~/AngularApp/sharedServices/data.service.js"></script>
+    <script src="~/libs/core-js/client/shim.min.js"></script>
+    <script src="~/libs/zone.js/dist/zone.js"></script>
+    <script src="~/libs/reflect-metadata/Reflect.js"></script>
+    <script src="~/libs/systemjs/dist/system.src.js"></script>
+    <script src="~/AngularApp/systemjs.config.js"></script>
+    <script>
+        System.import('app').catch(
+            function (err) {
+                console.error(err);
+            });
+    </script>
 }
 
-<div class="row" ng-app="app" >
+<div class="row" ng-app="app">
 
     <app></app>
 
