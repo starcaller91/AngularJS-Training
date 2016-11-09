@@ -314,7 +314,7 @@ var AjaxSubscriber = (function (_super) {
     };
     AjaxSubscriber.prototype.unsubscribe = function () {
         var _a = this, done = _a.done, xhr = _a.xhr;
-        if (!done && xhr && xhr.readyState !== 4 && typeof xhr.abort === 'function') {
+        if (!done && xhr && xhr.readyState !== 4) {
             xhr.abort();
         }
         _super.prototype.unsubscribe.call(this);
@@ -390,3 +390,4 @@ var AjaxTimeoutError = (function (_super) {
     return AjaxTimeoutError;
 }(AjaxError));
 exports.AjaxTimeoutError = AjaxTimeoutError;
+//# sourceMappingURL=AjaxObservable.js.map

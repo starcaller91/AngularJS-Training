@@ -82,3 +82,4 @@ var PairsObservable = (function (_super) {
     return PairsObservable;
 }(Observable_1.Observable));
 exports.PairsObservable = PairsObservable;
+//# sourceMappingURL=PairsObservable.js.map

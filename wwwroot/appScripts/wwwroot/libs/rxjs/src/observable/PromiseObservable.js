@@ -118,3 +118,4 @@ function dispatchError(arg) {
         subscriber.error(err);
     }
 }
+//# sourceMappingURL=PromiseObservable.js.map

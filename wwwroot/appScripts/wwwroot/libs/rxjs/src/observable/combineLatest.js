@@ -68,3 +68,4 @@ function combineLatest() {
     return new ArrayObservable_1.ArrayObservable(observables, scheduler).lift(new combineLatest_1.CombineLatestOperator(project));
 }
 exports.combineLatest = combineLatest;
+//# sourceMappingURL=combineLatest.js.map
