@@ -41,7 +41,7 @@ gulp.task('ts', function (done) {
             "scripts/app/*.ts"
     ])
         .pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
-    return tsResult.js.pipe(gulp.dest('./wwwroot/appScripts'));
+    return tsResult.js.pipe(gulp.dest('/wwwroot/AngularApp/AppScripts''));
 });
 
 gulp.task('watch', ['watch.ts']);
