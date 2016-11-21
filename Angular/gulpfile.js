@@ -38,7 +38,8 @@ gulp.task("scriptsNStyles", () => {
 var tsProject = ts.createProject('tsconfig.json');
 gulp.task('ts', function (done) {
     var tsResult = gulp.src([
-            "scripts/app/*.ts"
+            "scripts/app/*.ts",
+            "scripts/app/**/*.ts"
     ])
         .pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
     return tsResult.js.pipe(gulp.dest('/wwwroot/AngularApp/AppScripts'));
