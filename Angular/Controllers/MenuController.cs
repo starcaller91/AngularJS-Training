@@ -48,6 +48,7 @@ namespace WebApplication1.Controllers
 
                     if (MenuRepository.SaveChanges())
                     {
+                        menu = MenuRepository.ReturnMenuForDay((int)DateTime.Now.DayOfWeek);
                         Response.StatusCode = (int)HttpStatusCode.Created;
                         return Json(menu);
                     }
@@ -79,7 +80,6 @@ namespace WebApplication1.Controllers
 
                     if (MenuRepository.SaveChanges())
                     {
-                        menu = MenuRepository.ReturnMenuForDay((int)DateTime.Now.DayOfWeek);
                         Response.StatusCode = (int)HttpStatusCode.Created;
                         return Json(menu);
                     }
