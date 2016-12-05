@@ -11,14 +11,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 const core_1 = require('@angular/core');
 const platform_browser_1 = require('@angular/platform-browser');
 const http_1 = require('@angular/http');
+const forms_1 = require('@angular/forms');
+const app_routing_1 = require('./app.routing');
 const app_component_1 = require('./app.component');
+const menu_component_1 = require('./menu/menu.component');
+const table_overview_component_1 = require('./tables/table-overview.component');
+const meal_dropdown_component_1 = require('./meals/meal-dropdown.component');
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, http_1.HttpModule],
-        declarations: [app_component_1.App],
-        bootstrap: [app_component_1.App]
+        imports: [platform_browser_1.BrowserModule, http_1.HttpModule, app_routing_1.appRouting, forms_1.FormsModule],
+        declarations: [app_component_1.AppComponent, menu_component_1.MenuComponent, table_overview_component_1.TableOverviewComponent, meal_dropdown_component_1.MealDropdownComponent],
+        providers: [app_routing_1.appRoutingProviders],
+        bootstrap: [app_component_1.AppComponent]
     }), 
     __metadata('design:paramtypes', [])
 ], AppModule);

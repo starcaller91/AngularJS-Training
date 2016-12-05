@@ -9,13 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 const core_1 = require('@angular/core');
-let App = class App {
+let AppComponent = class AppComponent {
 };
-App = __decorate([
+AppComponent = __decorate([
     core_1.Component({
         selector: 'app',
         templateUrl: '/AngularApp/Views/app.html'
     }), 
     __metadata('design:paramtypes', [])
-], App);
-exports.App = App;
+], AppComponent);
+exports.AppComponent = AppComponent;

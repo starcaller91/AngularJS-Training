@@ -1,0 +1,57 @@
+﻿<div class="col-xs-12">
+    <table class="table table-striped" id="MenuItemsTable">
+        <tr>
+            <th class="col-xs-3">Name of the meal</th>
+            <th class="col-xs-1">Price</th>
+            <th class="col-xs-2">Category</th>
+            <th class="col-xs-6"></th>
+        </tr>
+        <tr *ngFor="let item of menu?.items">
+            <td class="col-xs-3">{{ item.meal.name }}</td>
+            <td class="col-xs-1">{{ item.meal.price }}</td>
+            <td class="col-xs-2">{{ item.meal.category.name }}</td>
+            <td class="col-xs-6">
+                <div class="col-xs-8">
+                    <div class="btn-group button-group-meal">
+                        <button onfocus="this.blur();"
+                                [ngClass]="{'btn':true, 'btn-primary':true,'active': item.breakfast}"
+                                (click)="changeStateOfMeal(item, 'breakfast')">
+                            <span> Breakfast </span>
+                        </button>
+                        <button onfocus="this.blur();"
+                                [ngClass]="{'btn':true, 'btn-primary':true,'active': item.lunch}"
+                                (click)="changeStateOfMeal(item, 'lunch')">
+                            <span> Lunch </span>
+                        </button>
+                        <button onfocus="this.blur();"
+                                [ngClass]="{'btn':true, 'btn-primary':true, 'active': item.dinner}"
+                                (click)="changeStateOfMeal(item, 'dinner')">
+                            <span> Dinner </span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <button id="RemoveMealButton" onfocus="this.blur();" (click)="removeFromMenu(item)">
+                        <i class="fa fa-minus fa-2x" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div *ngIf="meals && meals.length>0">
+        <div class="col-xs-6">
+            <div class="dropdown">
+                <meal-dropdown [meals]="meals" [selectedMeal]="selectedDropdownMeal" (mealChanged)="mealSelected($event)"></meal-dropdown>
+            </div>
+        </div>
+        <div class="col-xs-2">
+            <button id="AddMealButton" [disabled]="!selectedDropdownMeal"
+                    (click)="addMealToMenu(selectedDropdownMeal)">
+                <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+</div>

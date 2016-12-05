@@ -5,4 +5,4 @@
     templateUrl: '/AngularApp/Views/app.html'
 })
 
-export class App { }  
+export class AppComponent { }  

@@ -6,14 +6,14 @@
     ]
   ],
   "_from": "@angular/upgrade@>=2.1.1 <3.0.0",
-  "_id": "@angular/upgrade@2.1.2",
+  "_id": "@angular/upgrade@2.2.3",
   "_inCache": true,
   "_installable": true,
   "_location": "/@angular/upgrade",
-  "_nodeVersion": "6.7.0",
+  "_nodeVersion": "6.6.0",
   "_npmOperationalInternal": {
-    "host": "packages-18-east.internal.npmjs.com",
-    "tmp": "tmp/upgrade-2.1.2.tgz_1477593325664_0.03569021844305098"
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/upgrade-2.2.3.tgz_1479942854528_0.16148362797684968"
   },
   "_npmUser": {
     "email": "angular-core+npm@google.com",
@@ -32,8 +32,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/@angular/upgrade/-/upgrade-2.1.2.tgz",
-  "_shasum": "fc9423f87fcae418a0ae3b8d56c615d93563d44f",
+  "_resolved": "https://registry.npmjs.org/@angular/upgrade/-/upgrade-2.2.3.tgz",
+  "_shasum": "fb3137886b9349e6245bec4428bd6f9addf7994f",
   "_shrinkwrap": null,
   "_spec": "@angular/upgrade@^2.1.1",
   "_where": "C:\\Users\\s.popov\\Desktop\\AngularTraining\\Angular",
@@ -48,8 +48,8 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "fc9423f87fcae418a0ae3b8d56c615d93563d44f",
-    "tarball": "https://registry.npmjs.org/@angular/upgrade/-/upgrade-2.1.2.tgz"
+    "shasum": "fb3137886b9349e6245bec4428bd6f9addf7994f",
+    "tarball": "https://registry.npmjs.org/@angular/upgrade/-/upgrade-2.2.3.tgz"
   },
   "homepage": "https://github.com/angular/angular#readme",
   "license": "MIT",
@@ -64,10 +64,10 @@
   "name": "@angular/upgrade",
   "optionalDependencies": {},
   "peerDependencies": {
-    "@angular/compiler": "2.1.2",
-    "@angular/core": "2.1.2",
-    "@angular/platform-browser": "2.1.2",
-    "@angular/platform-browser-dynamic": "2.1.2"
+    "@angular/compiler": "2.2.3",
+    "@angular/core": "2.2.3",
+    "@angular/platform-browser": "2.2.3",
+    "@angular/platform-browser-dynamic": "2.2.3"
   },
   "readme": "ERROR: No README data found!",
   "repository": {
@@ -76,5 +76,5 @@
   },
   "scripts": {},
   "typings": "index.d.ts",
-  "version": "2.1.2"
+  "version": "2.2.3"
 }

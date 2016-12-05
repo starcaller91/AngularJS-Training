@@ -1,0 +1,12 @@
+﻿<div class="dropdown">
+    <button style="width:100%;" class="btn btn-default dropdow-toggle" type="button" id="MealsAddDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{ selectedMeal ? selectedMeal.name : noMealSelectedName }}
+        <i class="fa fa-caret-down" aria-hidden="true" id="MenuDropdownMeal"></i>
+    </button>
+    <ul class="dropdown-menu" style="width:100%">
+        <li><div (click)="MealsDropdownSelect(null)"> - Select item - </div></li>
+        <li *ngFor="let item of meals">
+            <div (click)="MealsDropdownSelect(item)">{{ item.name }}</div>
+        </li>
+    </ul>
+</div>
