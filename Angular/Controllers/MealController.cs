@@ -21,11 +21,18 @@ namespace Angular.Controllers
 
 
         [HttpGet]
-        public JsonResult ReturnAllMeals()
+        public JsonResult ReturnAllMealsForMenu()
         {
             ICollection<Meal> menu = MealRepository.ReturnAllAvailableMealsForMenu(MenuRepository.ReturnMenuForDay((int)DateTime.Now.DayOfWeek));
 
             return Json(menu);
+        }
+
+        [HttpGet]
+        public JsonResult ReturnAllMeals()
+        {
+            ICollection<Meal> meals = MealRepository.ReturnAllMeals();
+            return Json(meals);
         }
 
     }

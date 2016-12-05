@@ -33,12 +33,17 @@ gulp.task("scriptsNStyles", () => {
         'node_modules/bootstrap/dist/css/bootstrap.css',
         'node_modules/font-awesome/css/font-awesome.min.css'
     ]).pipe(gulp.dest('./wwwroot/libs/css'));
+
+    gulp.src([
+    'node_modules/font-awesome/fonts/**'
+    ]).pipe(gulp.dest('./wwwroot/libs/fonts'));
 });
 
 var tsProject = ts.createProject('tsconfig.json');
 gulp.task('ts', function (done) {
     var tsResult = gulp.src([
-            "scripts/app/*.ts"
+            "scripts/app/*.ts",
+            "scripts/app/**/*.ts"
     ])
         .pipe(ts(tsProject), undefined, ts.reporter.fullReporter());
     return tsResult.js.pipe(gulp.dest('./wwwroot/AngularApp/AppScripts'));

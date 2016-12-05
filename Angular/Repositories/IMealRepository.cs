@@ -9,7 +9,8 @@ namespace Angular.Repositories
     public interface IMealRepository
     {
         ICollection<Meal> ReturnAllAvailableMealsForMenu(Menu menu);
-        
+
+        ICollection<Meal> ReturnAllMeals();
 
 
     }

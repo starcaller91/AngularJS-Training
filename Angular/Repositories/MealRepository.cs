@@ -24,5 +24,12 @@ namespace Angular.Repositories
                 .Where(x => !takenMeals.Any(meal => meal == x))
                 .ToList();
         }
-    }
+
+        public ICollection<Meal> ReturnAllMeals()
+        {
+            return context.Meals
+                .Select(x => x)
+                .ToList();
+        }
+     }
 }

@@ -1,108 +1,107 @@
-﻿#MenuDropdownMeal{
-    float:right; 
-    padding-top:3px;
+﻿#MenuDropdownMeal {
+    float: right;
+    padding-top: 3px;
 }
 
-#AddMealButton i{
-    color:gold;
+#AddMealButton i {
+    color: gold;
 }
 
-#AddMealButton:disabled i{
-    color:rgba(255,215,0, 0.4);
+#AddMealButton:disabled i {
+    color: rgba(255,215,0, 0.4);
 }
 
-#RemoveMealButton i{
+#RemoveMealButton i {
     color: red;
 }
 
-#AddMealButton{
-border:none; 
-background-color:transparent;
-height: 50px;
-text-align: center!important;
-margin: auto!important;
+#AddMealButton {
+    border: none;
+    background-color: transparent;
+    height: 50px;
+    text-align: center !important;
+    margin: auto !important;
 }
 
-#MealsAddDropdown{
-    height:50px;    
-    width:100%;
-    text-align:center;
+#MealsAddDropdown {
+    height: 50px;
+    width: 100%;
+    text-align: center;
     background-color: sandybrown;
 }
 
-#MenuItemsTable button{
-    width:100px;
+#MenuItemsTable button {
+    width: 100px;
 }
 
 #RemoveMealButton {
-    border:none; 
-    background-color:transparent;
+    border: none;
+    background-color: transparent;
     height: 50px;
 }
 
 table, tr, td, th {
-    vertical-align: middle!important;
-    text-align: center!important;
+    vertical-align: middle !important;
+    text-align: center !important;
 }
 
-.glupi-bootstrap-ne-razume-vertical-align {
+.button-group-meal {
     padding-top: 8px;
 }
 
-    .btn-primary {
-        background-color: crimson;
+.btn-primary {
+    background-color: crimson;
+}
+
+    .btn-primary:active {
+        background-color: gold;
     }
 
-        .btn-primary:active {
-            background-color: gold	;
+    .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+        background-color: gold;
+    }
+
+        .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
+            background-color: rgba(255,215,0, 0.8);
         }
 
-        .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
-            background-color: gold	;
-        }
-
-            .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
-                background-color: rgba(255,215,0, 0.8);
-                
-            }
-        .btn-primary:hover {
-            background-color: rgba(220,20,60, 0.8);
-        }
+    .btn-primary:hover {
+        background-color: rgba(220,20,60, 0.8);
+    }
 
 
 .table tr th {
-    background-color: sandybrown!important;
+    background-color: sandybrown !important;
     border: 1px solid white;
-        font-size: 18px!important;
+    font-size: 18px !important;
     font-weight: bold;
-    color: crimson!important;
+    color: crimson !important;
 }
 
 .table {
-color:crimson;
-font-size:14px;
+    color: crimson;
+    font-size: 14px;
 }
 
 .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
-   background-color: rgba(244,164,96, 0.3);
+    background-color: rgba(244,164,96, 0.3);
 }
 
 
 .restourant-table {
-    width:100%;
+    width: 100%;
     height: 200px;
     border: inset 10px rgba(220,20,60, 1);
-    margin-bottom:10px!important;
-
+    margin-bottom: 10px !important;
 }
 
-    .no-padding {
-        padding: 0!important;
-    }
+.no-padding {
+    padding: 0 !important;
+}
 
 .add-order-div {
-    vertical-align:central;
-    text-align:center;
+    vertical-align: central;
+    text-align: center;
     height: 100%;
     width: 100%;
 }
@@ -112,18 +111,18 @@ font-size:14px;
 }
 
 
-.no-order:hover {
-    background-color:rgba(255,215,0, 0.8);
-    transition: background-color ease-in 0.5s;
-}
+    .no-order:hover {
+        background-color: rgba(255,215,0, 0.8);
+        transition: background-color ease-in 0.5s;
+    }
 
-    .no-order a div{
+    .no-order a div {
         height: 100%;
         width: 100%;
     }
 
         .no-order a div span {
-            font-size:30px;
+            font-size: 30px;
         }
 
 .fa-plus-circle {
@@ -135,12 +134,12 @@ font-size:14px;
 }
 
 #statusOfTheOrder, #orderDetails {
-    width:100%;
+    width: 100%;
     height: 50%;
 }
 
 .left-part-tables {
-    background-color:sandybrown!important;
+    background-color: sandybrown !important;
     color: darkred;
     text-align: center;
 }
@@ -153,12 +152,79 @@ font-size:14px;
 .right-part-tables {
     /*background-color: rgba(255,215,0, 0.4);*/
     background: -moz-linear-gradient(45deg, rgba(255,207,50,1) 0%, rgba(255,207,50,0.96) 1%, rgba(255,255,255,0.85) 4%, rgba(255,207,50,0.75) 7%, rgba(255,255,255,0.64) 10%, rgba(255,207,50,0.57) 12%, rgba(255,239,187,0.5) 14%, rgba(255,255,255,0.5) 15%, rgba(255,207,50,0.5) 18%, rgba(255,255,255,0.5) 21%, rgba(255,207,50,0.5) 24%, rgba(255,255,255,0.5) 26%, rgba(255,207,50,0.5) 28%, rgba(255,255,255,0.5) 31%, rgba(255,207,50,0.5) 33%, rgba(255,255,255,0.5) 36%, rgba(255,207,50,0.5) 38%, rgba(255,255,255,0.5) 41%, rgba(255,207,50,0.5) 44%, rgba(255,255,255,0.5) 47%, rgba(255,207,50,0.5) 50%, rgba(255,255,255,0.5) 53%, rgba(255,207,50,0.5) 55%, rgba(255,255,255,0.5) 57%, rgba(255,207,50,0.5) 60%, rgba(255,255,255,0.5) 63%, rgba(255,207,50,0.5) 66%, rgba(255,255,255,0.5) 70%, rgba(255,207,50,0.5) 72%, rgba(255,255,255,0.5) 75%, rgba(255,207,50,0.5) 78%, rgba(255,255,255,0.5) 81%, rgba(255,207,50,0.5) 84%, rgba(255,255,255,0.5) 88%, rgba(255,207,50,0.5) 90%, rgba(255,255,255,0.5) 95%, rgba(255,207,50,0.5) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(45deg, rgba(255,207,50,1) 0%,rgba(255,207,50,0.96) 1%,rgba(255,255,255,0.85) 4%,rgba(255,207,50,0.75) 7%,rgba(255,255,255,0.64) 10%,rgba(255,207,50,0.57) 12%,rgba(255,239,187,0.5) 14%,rgba(255,255,255,0.5) 15%,rgba(255,207,50,0.5) 18%,rgba(255,255,255,0.5) 21%,rgba(255,207,50,0.5) 24%,rgba(255,255,255,0.5) 26%,rgba(255,207,50,0.5) 28%,rgba(255,255,255,0.5) 31%,rgba(255,207,50,0.5) 33%,rgba(255,255,255,0.5) 36%,rgba(255,207,50,0.5) 38%,rgba(255,255,255,0.5) 41%,rgba(255,207,50,0.5) 44%,rgba(255,255,255,0.5) 47%,rgba(255,207,50,0.5) 50%,rgba(255,255,255,0.5) 53%,rgba(255,207,50,0.5) 55%,rgba(255,255,255,0.5) 57%,rgba(255,207,50,0.5) 60%,rgba(255,255,255,0.5) 63%,rgba(255,207,50,0.5) 66%,rgba(255,255,255,0.5) 70%,rgba(255,207,50,0.5) 72%,rgba(255,255,255,0.5) 75%,rgba(255,207,50,0.5) 78%,rgba(255,255,255,0.5) 81%,rgba(255,207,50,0.5) 84%,rgba(255,255,255,0.5) 88%,rgba(255,207,50,0.5) 90%,rgba(255,255,255,0.5) 95%,rgba(255,207,50,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(45deg, rgba(255,207,50,1) 0%,rgba(255,207,50,0.96) 1%,rgba(255,255,255,0.85) 4%,rgba(255,207,50,0.75) 7%,rgba(255,255,255,0.64) 10%,rgba(255,207,50,0.57) 12%,rgba(255,239,187,0.5) 14%,rgba(255,255,255,0.5) 15%,rgba(255,207,50,0.5) 18%,rgba(255,255,255,0.5) 21%,rgba(255,207,50,0.5) 24%,rgba(255,255,255,0.5) 26%,rgba(255,207,50,0.5) 28%,rgba(255,255,255,0.5) 31%,rgba(255,207,50,0.5) 33%,rgba(255,255,255,0.5) 36%,rgba(255,207,50,0.5) 38%,rgba(255,255,255,0.5) 41%,rgba(255,207,50,0.5) 44%,rgba(255,255,255,0.5) 47%,rgba(255,207,50,0.5) 50%,rgba(255,255,255,0.5) 53%,rgba(255,207,50,0.5) 55%,rgba(255,255,255,0.5) 57%,rgba(255,207,50,0.5) 60%,rgba(255,255,255,0.5) 63%,rgba(255,207,50,0.5) 66%,rgba(255,255,255,0.5) 70%,rgba(255,207,50,0.5) 72%,rgba(255,255,255,0.5) 75%,rgba(255,207,50,0.5) 78%,rgba(255,255,255,0.5) 81%,rgba(255,207,50,0.5) 84%,rgba(255,255,255,0.5) 88%,rgba(255,207,50,0.5) 90%,rgba(255,255,255,0.5) 95%,rgba(255,207,50,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background: -webkit-linear-gradient(45deg, rgba(255,207,50,1) 0%,rgba(255,207,50,0.96) 1%,rgba(255,255,255,0.85) 4%,rgba(255,207,50,0.75) 7%,rgba(255,255,255,0.64) 10%,rgba(255,207,50,0.57) 12%,rgba(255,239,187,0.5) 14%,rgba(255,255,255,0.5) 15%,rgba(255,207,50,0.5) 18%,rgba(255,255,255,0.5) 21%,rgba(255,207,50,0.5) 24%,rgba(255,255,255,0.5) 26%,rgba(255,207,50,0.5) 28%,rgba(255,255,255,0.5) 31%,rgba(255,207,50,0.5) 33%,rgba(255,255,255,0.5) 36%,rgba(255,207,50,0.5) 38%,rgba(255,255,255,0.5) 41%,rgba(255,207,50,0.5) 44%,rgba(255,255,255,0.5) 47%,rgba(255,207,50,0.5) 50%,rgba(255,255,255,0.5) 53%,rgba(255,207,50,0.5) 55%,rgba(255,255,255,0.5) 57%,rgba(255,207,50,0.5) 60%,rgba(255,255,255,0.5) 63%,rgba(255,207,50,0.5) 66%,rgba(255,255,255,0.5) 70%,rgba(255,207,50,0.5) 72%,rgba(255,255,255,0.5) 75%,rgba(255,207,50,0.5) 78%,rgba(255,255,255,0.5) 81%,rgba(255,207,50,0.5) 84%,rgba(255,255,255,0.5) 88%,rgba(255,207,50,0.5) 90%,rgba(255,255,255,0.5) 95%,rgba(255,207,50,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(255,207,50,1) 0%,rgba(255,207,50,0.96) 1%,rgba(255,255,255,0.85) 4%,rgba(255,207,50,0.75) 7%,rgba(255,255,255,0.64) 10%,rgba(255,207,50,0.57) 12%,rgba(255,239,187,0.5) 14%,rgba(255,255,255,0.5) 15%,rgba(255,207,50,0.5) 18%,rgba(255,255,255,0.5) 21%,rgba(255,207,50,0.5) 24%,rgba(255,255,255,0.5) 26%,rgba(255,207,50,0.5) 28%,rgba(255,255,255,0.5) 31%,rgba(255,207,50,0.5) 33%,rgba(255,255,255,0.5) 36%,rgba(255,207,50,0.5) 38%,rgba(255,255,255,0.5) 41%,rgba(255,207,50,0.5) 44%,rgba(255,255,255,0.5) 47%,rgba(255,207,50,0.5) 50%,rgba(255,255,255,0.5) 53%,rgba(255,207,50,0.5) 55%,rgba(255,255,255,0.5) 57%,rgba(255,207,50,0.5) 60%,rgba(255,255,255,0.5) 63%,rgba(255,207,50,0.5) 66%,rgba(255,255,255,0.5) 70%,rgba(255,207,50,0.5) 72%,rgba(255,255,255,0.5) 75%,rgba(255,207,50,0.5) 78%,rgba(255,255,255,0.5) 81%,rgba(255,207,50,0.5) 84%,rgba(255,255,255,0.5) 88%,rgba(255,207,50,0.5) 90%,rgba(255,255,255,0.5) 95%,rgba(255,207,50,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-a{
-    color:darkcyan;
+a {
+    color: sandybrown;
 }
 
+    a:hover {
+        color: darkred;
+        transition: color ease-in 0.5s;
+        text-decoration: none;
+    }
 
+.dropdown-menu li {
+    height: 30px;
+}
+
+    .dropdown-menu li div {
+        height: 100%;
+        text-align: center;
+        padding: 5px;
+    }
+
+
+    .dropdown-menu li:hover {
+        background-color: rgba(255,215,0, 0.5);
+        cursor: pointer;
+    }
+
+.show-wait {
+    height: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    padding: 0 !important;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+    .show-wait > div {
+        margin-top: 100px;
+        color: darkred;
+    }
+
+        .show-wait > div > div {
+            height: 100px;
+            width: 150px;
+            background-color: rgb(244,164,96);
+            margin: 0 auto;
+            padding: 15px;
+            border: 1px solid darkred;
+        }
+
+#orderDetails {
+    cursor: pointer;
+    padding:10px;
+}
+
+#statusOfTheOrder {
+    padding: 20px;
+    color: darkred;
+    font-size: 30px;
+    box-shadow: rgba(255,215,0, 0.2) -5px -5px inset;
+}
+
+    .animation-div {
+     background-color:darkred;
+     width:100%;
+     height:90px!important; 
+     z-index:1000;
+     color:sandybrown;
+     position:absolute;
+     margin: -19.6px;
+     overflow:hidden;
+    }
